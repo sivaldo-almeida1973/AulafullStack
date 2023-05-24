@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanho texto</title>
+    <style type="text/css">
+
+
+        div{
+            font-size: 60px;
+        }
+
+        .texto{
+            /*px -> tamanho fixo
+            % -> tamanho relativo
+            em -> tamanho relativo ao conteiner pai*/
+            /*font-size: 50px;*/
+            font-size: 2em;
+        }
+        
+        .texto2{
+            font-size: 1.5em;
+        }
+
+
+
+    </style>
+</head>
+<body> <!--container pai da div-->
+
+    <div> <!--container pai do paragrafo-->
+    <p class="texto">Conteúdo 1</p>
+    <p class="texto2">Conteúdo 2</p> <!--conteiner filho-->
+    </div>
+    
+</body>
+</html>
