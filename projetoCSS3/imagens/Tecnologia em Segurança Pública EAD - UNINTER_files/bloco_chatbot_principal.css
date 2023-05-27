@@ -1,0 +1,576 @@
+ /*   ACCORDION kkk  */
+
+                                .uninter-chat-accordion {
+                                    background-color: #eee;
+                                    color: #444;
+                                    cursor: pointer;
+                                    padding: 18px;
+                                    width: 100%;
+                                    text-align: left;
+                                    border: none;
+                                    outline: none;
+                                    transition: 0.4s;
+                                }
+
+                                /*.active, */
+                                .uninter-chat-accordion:hover {
+                                    background-color: #ccc;
+                                }
+
+                                .uninter-chat-panel {
+                                    padding: 0 18px;
+                                    background-color: white;
+                                    display: none;
+                                    overflow: hidden;
+                                }
+                                /*   ACCORDION   */
+
+
+                                .uninter-chat-container .preloader {
+                                    display: none!important;
+                                }
+
+                                .uninter-chat-topo {
+                                    border-radius: 10px 10px 0px 0px;
+									height: 38px;
+									background-color: #4270a1;
+									float: left;
+									width: 100%;
+									position: initial;
+									padding-top: 12px;
+                                }
+
+                                /* .uninter-chat-topo h2 { */
+                                    /* color: #fff; */
+                                    /* cursor: pointer; */
+                                    /* padding: 5px; */
+                                    /* padding-top: 12px; */
+                                /* } */
+
+                                .uninter-chat-topo h2 {
+                                    color: #fff;
+                                    cursor: pointer;
+                                    padding: 5px;
+                                    padding-top: 0px;
+                                }
+
+                                .uninter-chat-interno {
+                                    margin-bottom: 0px;
+                                    min-height: 550px;
+                                    overflow: hidden;
+                                    float: left;
+                                    width: 100%;
+                                    height: 100%;
+                                    position: relative;
+                                    padding: 0px!important;
+                                }
+
+                                .uninter-nina-balao-a {
+                                    margin: 5%!important;
+                                    background-color: #ffffff!important;
+                                    padding: 10px;
+                                    -webkit-border-radius: 20px;
+                                    border-radius: 35px 35px 5px 35px;
+                                    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4);
+                                    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4);
+                                    position: relative;
+                                    max-width: 70%;
+                                    float: left;
+                                    word-wrap: break-word;
+                                    font-family: geogrotesque, Helvetica, Arial, sans-serif;
+                                    text-align: center;
+                                    z-index: 9998;
+                                }
+
+                                .uninter-nina-balao-a span {
+                                    font-size: 18px!important;
+                                    text-align: center!important;
+                                    float: left;
+                                    margin-bottom: 5px;
+                                }
+
+                                .uninter-nina-balao-b {
+                                    margin: 5%!important;
+                                    background-color: #ffffff!important;
+                                    padding: 10px;
+                                    -webkit-border-radius: 20px;
+                                    border-radius: 35px 35px 20px 35px;
+                                    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4);
+                                    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4);
+                                    position: relative;
+                                    max-width: 70%;
+                                    float: right;
+                                    word-wrap: break-word;
+                                    font-family: geogrotesque, Helvetica, Arial, sans-serif;
+                                    margin-top: -40px!important;
+                                    text-align: right;
+                                    text-align: center;
+                                    z-index: 9999;
+                                }
+
+                                .uninter-nina-balao-b span {
+                                    font-size: 16px!important;
+                                    text-align: center!important;
+                                    float: left;
+                                    margin-top: 5px;
+                                }
+
+                                .uninter-nina-balao-b:after {
+                                    position: absolute;
+                                    top: 103px;
+                                    display: inline-block;
+                                    border-top: 0px solid #ffffff;
+                                    border-left: 0px solid transparent;
+                                    border-right: 10px solid #ffffff;
+                                    border-bottom: 35px solid transparent;
+                                    content: " ";
+                                    border-left-width: 0;
+                                    border-right-width: 20px;
+                                    left: 220px;
+                                    right: auto;
+                                    -moz-transform: scaleX(-1);
+                                    -o-transform: scaleX(-1);
+                                    -webkit-transform: scaleX(-1);
+                                    transform: scaleX(-1);
+                                }
+
+                                .uninter-nina-balao-b:before {
+                                    position: absolute;
+                                    top: 105px;
+                                    display: inline-block;
+                                    border-top: 0px solid #ccc;
+                                    border-left: 0px solid transparent;
+                                    border-right: 10px solid #ccc;
+                                    border-bottom: 38px solid transparent;
+                                    content: " ";
+                                    border-left-width: 0;
+                                    border-right-width: 24px;
+                                    left: 218px;
+                                    right: auto;
+                                    -moz-transform: scaleX(-1);
+                                    -o-transform: scaleX(-1);
+                                    -webkit-transform: scaleX(-1);
+                                    transform: scaleX(-1);
+                                }
+
+                                .uninter-btn-fechar-box {
+                                    height: 32px;
+                                    width: 32px;
+                                    float: right;
+                                    border: 1px solid rgba(30, 53, 96, 0.2)!important;
+                                    border-radius: 20px 20px 20px 20px;
+                                    margin-top: -53px;
+                                    background-color: rgba(255, 255, 255, 1)!important;
+                                    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+                                }
+
+                                .uninter-btn-fechar-box-alt {
+                                    height: 26px;
+									width: 26px;
+                                    float: right;
+                                    border: 0px solid rgba(30, 53, 96, 0.2)!important;
+                                    border-radius: 20px 20px 20px 20px;
+									/* margin-top: -30px!important; */
+									/* margin-right: 25px!important; */
+									/* margin-bottom: 15px!important; */
+									/* margin-left: 15px!important; */
+
+									margin-top: 5px!important;
+									margin-right: 0px!important;
+									margin-bottom: 0px!important;
+									margin-left: 15px!important;
+									display: inline-grid;
+                                }
+
+								.uninter-chat-bt-close{
+									border: 1px solid #fff !important;
+									border-radius: 30px !important;
+									float: right !important;
+									padding: 5px 6px;
+									font-size: 10px;
+									margin-top: -3px;
+									font-size: 11px !important;
+								}
+                                .uninter-btn-icon-fechar-abrir {
+									padding-top: 6px !important;
+									margin: -3px -14px 0 0 !important;
+									font-size: 12px !important;
+                                }
+
+                                .uninter-btn-fechar-box:hover {
+                                    background: rgba(255, 255, 255, 0.12);
+                                    box-shadow: 0 0 16px rgba(30, 53, 96, 0.8);
+                                    cursor: pointer;
+                                    border: 1px solid rgba(30, 53, 96, 0.8)!important;
+                                    background-color: rgba(255, 255, 255, 1)!important;
+                                }
+
+                                .uninter-btn-fechar-box:hover .uninter-icon-config-fechar {
+                                    color: rgba(30, 53, 96, 0.8)!important;
+                                }
+
+                                .uninter-icon-config-fechar.fa-times {
+                                    margin-top: 10px !important;
+                                    margin-left: -3px!important;
+                                }
+
+                                .fa {
+                                    display: inline-block;
+                                    font: 14px/1 FontAwesome;
+                                    font-size: inherit;
+                                    text-rendering: auto;
+                                    -webkit-font-smoothing: antialiased;
+                                    -moz-osx-font-smoothing: grayscale;
+                                }
+
+                                .fa-seta-up {
+                                    font-family: sans-serif!important;
+                                }
+
+                                .uninter-icon-config-fechar {
+                                    display: inline-block;
+                                    width: 30px;
+                                    height: 30px;
+                                    fill: none;
+                                    stroke: currentColor;
+                                    stroke-width: 2px;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round!important;
+                                    color: rgba(30, 53, 96, 0.2)!important;
+                                    overflow: hidden!important;
+                                    vertical-align: middle!important;
+                                    text-align: center!important;
+                                    text-indent: 0!important;
+                                    margin-top: 0px !important;
+                                    margin-left: 2px;
+                                    font-size: 1.7rem!important;
+                                    font-weight: bold;
+                                    font-style: initial;
+                                    font-family: FontAwesome;
+                                }
+
+.fa-times:before {
+                                    content: "\f00d" !important;
+                                }
+
+                                h2.uninter-chat-main-title {
+                                    font-size: 18px;
+                                    margin-top: 0px;
+                                    font-family: geogrotesque, Helvetica, Arial, sans-serif;
+                                    font-weight: 500;
+                                    text-align: center;
+                                    width: fit-content;
+                                    margin-right: auto;
+                                    margin-left: auto;
+									width:100% !important;
+                                }
+
+                                /* body {
+                                    font-family: Arial, Helvetica, sans-serif;
+                                }
+
+                                * {
+                                    box-sizing: border-box;
+                                } */
+
+                                /* Button used to open the chat form - fixed at the bottom of the page */
+
+                                /* .open-button {
+                                    background-color: #555;
+                                    color: white;
+                                    padding: 16px 20px;
+                                    border: none;
+                                    cursor: pointer;
+                                    opacity: 0.8;
+                                    position: fixed;
+                                    bottom: 23px;
+                                    right: 28px;
+                                    width: 280px;
+                                } */
+
+                                /* The popup chat - hidden by default */
+
+                                .chat-popup {
+                                    display: none;
+                                    position: fixed;
+                                    bottom: 0;
+                                    right: 15px;
+                                    border: 3px solid #f1f1f1;
+                                    z-index: 9;
+                                }
+                                /* Add styles to the form container */
+
+                                /* .form-container {
+                                    max-width: 300px;
+                                    padding: 10px;
+                                    background-color: white;
+                                } */
+
+                                /* Full-width textarea */
+
+                                /* .form-container textarea {
+                                    width: 100%;
+                                    padding: 15px;
+                                    margin: 5px 0 22px 0;
+                                    border: none;
+                                    background: #f1f1f1;
+                                    resize: none;
+                                    min-height: 200px;
+                                } */
+
+                                /* When the textarea gets focus, do something */
+
+                                /* .form-container textarea:focus {
+                                    background-color: #ddd;
+                                    outline: none;
+                                } */
+
+                                /* Set a style for the submit/send button */
+
+                                /* .form-container .btn {
+                                    background-color: #4CAF50;
+                                    color: white;
+                                    padding: 16px 20px;
+                                    border: none;
+                                    cursor: pointer;
+                                    width: 100%;
+                                    margin-bottom: 10px;
+                                    opacity: 0.8;
+                                } */
+
+                                /* Add a red background color to the cancel button */
+
+                                /* .form-container .cancel {
+                                    background-color: red;
+                                } */
+
+                                /* Add some hover effects to buttons */
+
+                                /* .form-container .btn:hover,
+                                .open-button:hover {
+                                    opacity: 1;
+                                } */
+
+                                .uninter-chat-accordion:hover {
+                                    background-color: rgb(0, 45, 86);
+                                }
+
+
+
+.fab {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 10000000 !important;
+}
+
+.fab button {
+	cursor: pointer;
+	width: 65px;
+	height: 60px;
+	/*border-radius: 30px;*/
+	background: #002e5e !important;
+	border: none;
+	/*box-shadow: 0 1px 5px rgba(0,0,0,.4);*/
+	color: #fff !important;
+	text-align: center;
+	padding: 0 0 10px 0 !important;
+	-webkit-transition: .2s ease-out;
+	-moz-transition: .2s ease-out;
+	transition: .2s ease-out;
+}
+
+	.fab button:focus {
+		outline: none;
+	}
+
+.fab ul.bg-atendimento-online {
+}
+
+.fab .bt-icone {
+	color: #fff !important;
+}
+
+	.fab .bt-icone:hover {
+		color: #fab500 !important;
+	}
+
+.fab button.main {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	border-radius: 30px !important;
+	background: #27d045 !important;
+	right: 0;
+	bottom: 0;
+	z-index: 20;
+	padding: 1px 0 0 0 !important;
+	font-size: 28px !important;
+}
+
+.fab button.main:before {
+	content: "\f086";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	color: #fff;
+}
+
+.fab ul {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 0;
+	padding-right: 5px;
+	margin: 0;
+	list-style: none;
+	z-index: 10;
+	-webkit-transition: .2s ease-out;
+	-moz-transition: .2s ease-out;
+	transition: .2s ease-out;
+}
+
+
+
+.fab ul li {
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+	margin-bottom: -10%;
+	opacity: 100;              /*  Esta opacidade interferiu na barra de Admin do Site  */
+	margin: 0 !important;
+	-webkit-transition: .3s ease-out;
+	-moz-transition: .3s ease-out;
+	transition: .3s ease-out;
+}
+
+.fab .bg-atendimento-online {
+	display:none!important;   /*  Esta display é para ocultar a barra de Atendimento  */
+}
+
+
+
+.fab ul li label {
+	margin-right: 10px;
+	white-space: nowrap;
+	display: block;
+	margin-top: 10px;
+	padding: 5px 8px;
+	background-color: white;
+	box-shadow: 0 1px 3px rgba(0,0,0,.2);
+	border-radius: 3px;
+	height: 18px;
+	font-size: 16px;
+	pointer-events: none;
+	opacity: 0;
+	-webkit-transition: .2s ease-out;
+	-moz-transition: .2s ease-out;
+	transition: .2s ease-out;
+}
+
+
+
+
+.fab.show button.main,
+.fab.show button.main {
+	outline: none;
+	background-color: #27d045;
+	box-shadow: 0 3px 8px rgba(0,0,0,.5);
+}
+
+.fab.show button.main:before,
+.fab.show button.main:before {
+	content: '\f107';
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	color: #fff;
+}
+
+.fab.show button.main + ul,
+.fab.show button.main + ul {
+	bottom: 70px;
+	background: #002e5e;
+	padding: 20px 0 0 0;
+	border-radius: 5px;
+	box-shadow: 0 1px 5px rgba(0,0,0,.4);
+}
+
+.fab.show button.main + ul li,
+.fab.show button.main + ul li {
+	margin-bottom: 10px;
+	opacity: 1;
+	color: #fff;
+	border-radius: 0 !important;
+}
+
+.fab.show button.main + ul li:hover,
+.fab.show button.main + ul li:hover {
+}
+
+.fab.show button.main + ul li:hover label,
+.fab.show button.main + ul li:hover label {
+	opacity: 1;
+}
+
+.fab .area-chat {
+	position: fixed;
+	bottom: 5px;
+	right: 74px;
+	z-index: 10000000 !important;
+	width: 350px;
+	height: 400px;
+	box-shadow: 0 1px 5px rgba(0,0,0,.4);
+	border-radius:10px 10px 0 0;
+}
+
+.chat-container .header .title {
+    font-weight: 600 !important;
+    font-size: 94.667% !important;
+
+}
+
+.chat-container .actions, .chat-container .chat-active-info .error .actions, .chat-container .error-container .error .actions {
+    margin: 17px 8px !important;
+}
+
+.uninter-btn-icon-whats{
+	width:60px;
+	height:auto;
+	position:fixed;
+  left: 5px;
+	bottom:0px;
+	z-index: 10000000 !important;
+	background:#29a71a;
+	border-radius:5px 5px 0 0;
+	text-align:center;
+}
+.uninter-btn-icon-whats:hover{
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,.4);
+	background:#219613;
+}
+.opcao-icone{
+	color:#fff !important;
+	font-size:32px !important;
+	padding: 8px 0 0px 0 !important;
+	line-height:30px !important;
+}
+.opcao-title{
+	color:#fff !important;
+	font-size:13px !important;
+	padding: 0px 0 3px 0 !important;
+}
+
+.scroll-top-button{
+	display:none !important; /* tira o botao scroll */
+}
+.chat-container .actions, .chat-container .chat-active-info .error .actions, .chat-container .error-container .error .actions {
+    margin: 24px 8px !important;
+    bottom: 13px !important;
+}
+
+.chat-container .actions .button-bar{
+    padding-bottom: 15px !important;
+}
