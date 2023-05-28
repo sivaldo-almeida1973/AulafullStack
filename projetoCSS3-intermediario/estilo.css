@@ -1,0 +1,32 @@
+/* 
+Modelo de caixa
+
+*/
+
+.conteudo{
+    border: 1px solid red;
+    /*
+    /*padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;*/
+    width: 150px; /*largura da divi*/
+    /*padding: 20px 10px 15px 5px;*/
+    padding: 20px;/* 20 px em todos os lados dentro do elemento*/
+    margin-top: 100px; /* abre espaços entre as div e o topo body*/
+    margin-bottom: 30px; /* abre espaços entre as divs para baixo*/
+    margin-right: 20px;/* abre espaços entre as divs e o lado direito do body*/
+    margin-left: 100px; /* abre espaços entre as divs e o lado esquerdo do body*/
+    /*margin: 20px 30px 40px 50px;*/
+    margin: 30px;/* margim de 20px em todos os lados*/
+    width: 150px;
+}
+
+/*margin-colapse ,um elemento abaixo do outro prevalece a maior margim*/
+
+.conteudo2{
+    margin: 5px;
+    width: 150px;
+    border: 1px solid red;
+
+}
