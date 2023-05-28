@@ -1,0 +1,25 @@
+body{
+    background: burlywood url('imagens2/fundo.png') repeat;
+    font: 16px arial, helvetica, sans-serif;
+}
+#principal{
+   
+    width: 900px;
+    
+}
+#menu{
+    background: #c5c5b2;
+    padding: 18px; /*aumenta espaço interno da div*/
+}
+a{
+    font-family: fantasy;
+    color: #4b566a;
+    text-decoration: none; /*tira o underline*/
+    font-weight: bold;
+    padding: 5px; /*abre epaço entre os menus*/
+}
+#conteudo{
+    border: 1px solid red;
+    width: 100%;
+    
+}
