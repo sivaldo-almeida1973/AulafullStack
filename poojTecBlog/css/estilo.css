@@ -1,0 +1,49 @@
+/*Limpar formatações padrões*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 1em;
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+    background: rgb(241, 241, 241);
+   
+
+}
+
+/*
+***Formatacao do menu***
+*/
+a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+a:link, a:visited{
+    color: white;
+    padding: 8px 12px;
+}
+a:hover{
+    color: #f7b600;
+    background: white;
+}
+/*
+***Layout***
+*/
+#area-cabecalho{
+    background-color: #f7b600;
+    padding: 15px;
+    text-align: center;
+
+}
+#area-logo, #area-menu{
+    padding: 10px;
+}
+h1{
+    color: #4e4e4e;
+    font-size: 2.5em;
+}
+.branco{
+    color: white;
+}
+
