@@ -1,0 +1,33 @@
+/*********
+Herançã 
+
+especificidade 
+quando se tem dois seletores iguais o ultimo sempre prevalece.
+*/
+/*
+#pagina p{
+    color: red !important;
+}
+#pagina p{
+    color: rgb(16, 240, 210);
+}
+*/
+
+/*seletor for mais especifico que o outro, a regra mais especifica sera aplicada, sobre as regras universais*/
+
+
+*{                       /*geral*/
+
+    color: red;
+}
+
+h2{        /*3*/               /*especifico prevelece do geral*/
+    color: rgb(0, 38, 255);
+}
+h2.verde{ /*2*/
+    color: rgb(0, 255, 42);
+}
+
+h2#amarelo{ /* 1*/
+    color: hwb(64 0% 0%);
+}
