@@ -8,16 +8,51 @@
 h1{
     color: rgb(37, 165, 76);
 }
+
+/***********seletor de class
 .verde{
     color: rgb(20, 207, 20);
-}
+}*/
 
 p.verde{
     color: rgb(65, 224, 65);
 
 }
-
+/***********seletor de ID
 #cabecalho{
     border: 1px solid rgb(74, 255, 3);
 }*/
 
+/********************************
+seletor de filho*/
+
+li>a{ /*seletor de filho*/
+    color: rgb(235, 13, 13);
+    text-decoration: none;
+
+
+}
+
+/********************************
+seletor descendente
+
+div a{
+   color: rgb(61, 230, 61);
+}
+*/
+
+
+/********************************
+seletor de irmão adjacente
+
+h1 + p{
+   color: rgb(230, 81, 61);
+}*/
+
+
+/********************************
+seletor de irmão geral*/
+
+h1~p{
+    color: rgb(231, 100, 24);
+}
