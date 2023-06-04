@@ -1,0 +1,45 @@
+/*****************************
+barra de navegação horizontal*/
+
+ul{
+   
+    padding: 0;
+    list-style-type: none;
+    width: 720px;
+    background: #159cb0 url(../imagem/arquivos-necessarios-navegacao-horizontal/fundo-horizontal.png) repeat-x;
+    float: left;
+}
+ul li {
+   
+    float: left;/*deixa o elemento flutuante*/
+
+}
+
+ul a {
+    
+    display: block; /*tranformar (inline) em (block)*/
+    padding: 0 2em; /*espaçamento lateral dentro de ul*/
+    line-height: 2em;/*enlarguece a ul cima e baixo*/
+    text-decoration: none; /*tira a linha do texto*/
+    color: white; /*cor do texto*/
+    /*border-left: 1px solid rosybrown;*/
+    background: url(../imagem/arquivos-necessarios-navegacao-horizontal/divisor.png) repeat-y left top;
+}
+ul .primeiro a{ /*tirar o divisor do começo da ul*/
+    background: none;
+}
+
+ul a:hover{ /*quando passar o mouse ,tera efeito*/
+    color: #085662;
+    background: #44cade;
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contatos #navegacao .contatos a{
+    color: #085662;
+    background: #44cade;
+    
+}
