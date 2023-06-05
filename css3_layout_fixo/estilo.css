@@ -35,13 +35,13 @@ body{
     background: #d1d1d1;
 }
 #conteudo-principal{
-    border: 1px solid red;
+  
     width: 63%; /* 320px coverter ((320*100)/500) para -> 64% */
     float: left;
 
 }
 #conteudo-secundario{
-    border: 1px solid red;
+   
     width: 34%; /* 180px  coverter ((180*100)/500) para -> 36% */
     float: right;
     background-color: #d1d1d1;
