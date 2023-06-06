@@ -1,0 +1,36 @@
+/*********************
+Estilos em formulários*/
+body{
+    font-family: "Trebuchet MS" Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+}
+legend{
+    font-weight: bold;
+}
+label{
+    
+    display: block;/* coverte de inline-block para display block par ficar acima da caixa de texto*/
+    cursor: pointer; /*o maouse vira uma mão*/
+}
+
+/*formatar caixas de texto*/
+input { /*[type="text"]*/
+    width: 20em;
+
+    
+}
+textarea{
+    width: 20em;
+    height: 10em;
+}
+input.radio, input.checkbox, input.submit{
+    width: auto;
+}
+.radio{
+    margin: 1em;}
