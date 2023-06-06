@@ -6,6 +6,7 @@ body{
     background: #f2f2f2;
 }
 #container {
+    border: 1px solid red;
    
     width: 85%; /*720px* mudar de px para 100% */
     margin: 0 auto;

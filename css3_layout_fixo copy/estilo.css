@@ -6,15 +6,18 @@ body{
     background: #f2f2f2;
 }
 #container {
-    width: 720px;
+    background: #fff url(imagens/coluna.png) repeat-y left top;
+    width: 960px;
     margin: 0 auto;
     background-color: #fff;
+    
 }
 #marca {
     height: 100px;
     background-color: #9E9E9E;
     text-align: center;
     line-height: 100px;
+    background: url(imagens/imagem1.jpg);
     
 }
 #conteudo {
@@ -50,7 +53,7 @@ body{
     float: left;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: #d1d1d1;
+   /* background: #d1d1d1;*/
 }
 #navegacao ul {
     list-style: none;
