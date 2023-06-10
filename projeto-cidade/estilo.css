@@ -10,18 +10,19 @@ body{
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     background: #fff url(CSS/imagens/fundo.png) repeat-x;
 }
-#container{
+#container{ /*onde esta cidade os links e o mapa (topo)*/
     width: 750px;
     margin: 0 auto;
-   
+  
 }
-#topo{
+#topo{ /*contem a palavra cidade e o mapa*/
     height: 150px;
     background: url(CSS/imagens/detalhe-topo.png) no-repeat right top;
     padding-top: 25px;
    /* border: 1px solid red;*/
+   border: 1px solid red;
 }
-.logo{
+.logo{  /*logo com palavra cidade*/
     width: 152px;
     height: 66px;
     background: url(CSS/imagens/logo.png);
@@ -39,30 +40,79 @@ ul{
 
 }
 
-#topo ul{
+#topo ul{ /*contem o (li) e o (a)*/
     margin-top: 30px;
     background: #b10333;
     float: left; 
 
 }
-#topo ul li{
+#topo ul li{   /*vai formatar o (li)*/
     float: left; /*coloca os elementos da lista um ao lado do outro*/
 }
 
-#topo ul a{
+#topo ul a{               /*vai formatar os links(a)*/
     font-size: 0.9em;
     display: block;
     padding: 0.5em 1.5em;
     text-decoration: none;
-    line-height: 2.1em;
+    line-height: 2.1em; /*aumenta a altura da barra do menu*/
     color: #fff;
-    background: url(CSS/imagens/divisor.png) no-repeat left center;
+    background: url(CSS/imagens/divisor.png) no-repeat left center;/*coloca divisor entre links*/
 }
-#topo ul .primeiro a {
+#topo ul .primeiro a { /*remove o divisor no inicio do menu*/
     background: none;
 
 
 }
-#topo ul a:hover{
+#topo ul a:hover{ /*faz efeito ao passar o mouse no menu*/
     background-color: #69001d;
+}
+
+/*formatação para marcar a pagina atual*/
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencias #navegacao a#ciencias,
+body.fotos #navegacao a#fotos
+
+{
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
+/* formatação do conteudo*/
+#conteudo{
+    margin-top: 60px; /*vai afastar pra baixo*/
+    background: rgb(131, 131, 172);
+}
+
+#primario{
+    width: 270px;
+    float: left;
+    background: blue;
+    
+}
+#secundario{
+    width: 270px;
+    float: left;
+    background: rgb(0, 255, 64);
+}
+#lateral{
+    width: 180px;
+    float: left;
+    background: rgb(255, 81, 0);
+}
+#container-rodape{
+    background: #294c71;
+    padding: 20px;
+    margin-top: 20px;
+}
+#rodape{
+
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
 }
