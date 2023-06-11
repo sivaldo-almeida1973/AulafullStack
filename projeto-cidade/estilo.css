@@ -97,11 +97,12 @@ body.fotos #navegacao a#fotos
    
 }
 
+
 #primario{
     width: 270px;
     float: left;
     margin: 0 0 20px 195px;/*essa margin ira arrastar para a direita*/
-    background: rgb(79, 79, 209);
+   
     
 }
 #duas-colunas #primario{
@@ -118,7 +119,7 @@ body.fotos #navegacao a#fotos
     width: 270px;
     float: left;
     margin: 0 0 20px 15px ;
-    background: rgb(0, 255, 64);
+  
 }
 
 #container-rodape{
@@ -141,17 +142,74 @@ h2{
     color: #fff;
     padding: 5px;
 }
+.caixa-conteudo{
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+
+}
+/*formatar menus laterais*/
+#lateral ul a{
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;/*espaço entre linhas*/
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+
+}
+#lateral ul a:hover{
+    background: #f9f9f9 url(CSS/imagens/marcador.png) no-repeat left center;
+    padding-left: 20px;/*vai centralizar o marcador*/
+    color: #0279f0;
+}
+/*formatando formulário */
+label {
+    display: block;
+    cursor: pointer; /*mouse em forma de mão*/
+}
+input{
+    width: 125px;
+    padding: 5px;
+    font-size: 0.9em;
+    background-color: #fff;
+}
+input.submit{   /* botao de enviar*/
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+    
+}
+/*formataçao  imagens*/
+
+img.imagem-principal {
+    width: 98%;
+    border:  3px solid #dfdfdf;
+}
+/* formatando cabeçalho*/
+h3{
+    text-transform: uppercase;/*maiusculas*/
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+.destaque h3 {
+      background: #b10333;
+      color: #fff;
+
+}
+.entrevista h3 {
+    background: #de003e;
+    
+}
 /*rodape*/
 #container-rodape{
     background-color: #294c71;
     paint-order: 20px;
 }
-.caixa-conteudo{
-     background: #fff;
-     padding: 5px;
-     margin-top: 5px;
 
-}
 #rodape{
 
     width: 750px;
