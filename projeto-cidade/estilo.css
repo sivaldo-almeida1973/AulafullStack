@@ -87,28 +87,70 @@ body.fotos #navegacao a#fotos
 #conteudo{
     margin-top: 60px; /*vai afastar pra baixo*/
     background: rgb(131, 131, 172);
+   
+}
+/*essa formatação ira colocar a div lateral na esquerda*/
+#lateral{
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+   
 }
 
 #primario{
     width: 270px;
     float: left;
-    background: blue;
+    margin: 0 0 20px 195px;/*essa margin ira arrastar para a direita*/
+    background: rgb(79, 79, 209);
     
+}
+#duas-colunas #primario{
+    width: 555px;
+    
+}
+#uma-coluna #primario{
+    width: 750px;
+   
+    margin: 0 0 20px 0px;/*essa margin ira arrastar para a direita*/
+ 
 }
 #secundario{
     width: 270px;
     float: left;
+    margin: 0 0 20px 15px ;
     background: rgb(0, 255, 64);
 }
-#lateral{
-    width: 180px;
-    float: left;
-    background: rgb(255, 81, 0);
-}
+
 #container-rodape{
     background: #294c71;
     padding: 20px;
     margin-top: 20px;
+}
+/*formatção da caixa*/
+.caixa{
+    background: #f3f3f3 url(CSS/imagens/fundo-caixa.png);
+    margin: 10px 0;
+    padding: 5px;
+
+
+}
+h2{
+
+    font-size: 1em;
+    background: #284c71;
+    color: #fff;
+    padding: 5px;
+}
+/*rodape*/
+#container-rodape{
+    background-color: #294c71;
+    paint-order: 20px;
+}
+.caixa-conteudo{
+     background: #fff;
+     padding: 5px;
+     margin-top: 5px;
+
 }
 #rodape{
 
