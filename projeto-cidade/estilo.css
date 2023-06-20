@@ -4,6 +4,7 @@ Estrutura do site             */
 *{
     margin: 0;
     padding: 0;
+    list-style: none; /*retira marcadore das lsitas*/
 }
 
 body{
@@ -20,7 +21,7 @@ body{
     background: url(CSS/imagens/detalhe-topo.png) no-repeat right top;
     padding-top: 25px;
    /* border: 1px solid red;*/
-   border: 1px solid red;
+  
 }
 .logo{  /*logo com palavra cidade*/
     width: 152px;
@@ -32,6 +33,13 @@ body{
 
 /****************************
 formatacao de barra de navegação*/
+a:link, a:visited{
+    color: #b10333;
+    padding: 2px;
+}
+a:hover{
+    color: #e50040;
+}
 ul{ 
    margin: 0;
    padding: 0;
@@ -218,17 +226,17 @@ h3{
 }
 #lista-noticias li a{
     text-decoration: none;
-    
+  
    
 }
 #lista-noticias li a h3{
+    font-size: 0.8em;
     padding: 0; /*retira o padding do h3*/
-    font-size: 0.7em;
-    color: rgb(98, 98, 233);
+    color: #0279f0;
    
 }
 #lista-noticias li a p{
-    
+    color: #000;
     font-size: 0.7em;
    
 }
