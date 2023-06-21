@@ -8,11 +8,10 @@ body{
     margin: 15px; /*espaço nas margens da pagina*/
 }
 #container {
-    background: #ede9cc;
+    background: #ede9cc url(../imagens/bg-container.png) top center repeat-y;
     margin: 0 auto;/*faz o container ficar centralizado*/
     min-width: 740px;
     max-width: 1180px; /*nao vai deixar distorcer a imagem e textos*/
-   
     
 }
 #topo {
@@ -87,3 +86,53 @@ a {
     padding: 5px 10px ;
     float: right;
 }
+/*barra de navegacao vertical */
+
+#menu {
+    margin-top: 15px;
+}
+ul {
+    list-style: none;
+}
+ul#navegacao {
+    float: left;
+}
+ul#navegacao a {
+    text-transform: uppercase;/*deixa tudo maiusculas*/
+    font-size: 0.8em;
+    padding: 5px;
+    color: #6e672c;
+    line-height: 30px; /*abre espaços entre os links*/
+}
+ul#navegacao a:hover {
+    background: #fdf6be;
+}
+.depoimento{
+    width: 226px;
+    height: 164px;
+    float: right;
+}
+#area-principal {
+   float: left;
+   width: 50%;
+   background: url(../imagens/bg-area-principal.png) top left repeat-x ;
+   padding: 15px 0px;
+}
+
+
+#area-lateral {
+    float: left;
+    width: 50%;
+    background: url(../imagens/bg-area-lateral.png) top left repeat-x ;
+    padding: 20px 0px;
+}
+.conteudo {
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+#rodape {
+    clear: both;
+}
+
