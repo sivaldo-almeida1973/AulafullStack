@@ -126,6 +126,7 @@ ul#navegacao a:hover {
     background: url(../imagens/bg-area-lateral.png) top left repeat-x ;
     padding: 20px 0px;
 }
+
 .conteudo {
     margin: 0 auto;
     width: 90%;
@@ -136,3 +137,48 @@ ul#navegacao a:hover {
     clear: both;
 }
 
+/*formatações de texto*/
+
+h2{
+    color: #7d7640;
+    font-size: 1.1em;
+    padding: 5px;
+
+}
+p{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+/*formatações lateral*/
+#beneficios li {
+    padding: 8px;
+    border-bottom: 1px solid rgb(182, 178, 178);
+    height: 6em;  /*ficou sobre o texto a imagem*/
+
+}
+
+/*aqui resolve o problema de cima com float*/
+#beneficios li a img {
+    float: left;
+    margin: 8px;
+   
+   
+}
+
+#beneficios li a p {
+    color: #000;
+     font-size: 0.9em;
+   
+}
+#beneficios li a h3 {
+    font-size: 1.1em;
+    color: #615b2d;
+    padding: 5px 0;
+    background: url(../imagens/ornamento.png)no-repeat center right;
+  
+}
+
+#beneficios  li:hover {
+    background: #f6f3d6;
+    cursor: pointer;
+} 
