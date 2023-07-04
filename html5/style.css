@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+header {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: 44px;
+}
+
+header .superior a {
+      float: left;
+      text-decoration: none;
+      padding: 10px;
+      color: #767373;
+}
+header .inferior a {
+    float: right;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    padding: 10px;
+    color:  #767373;
+
+}
+nav {
+    background: rgb(34, 34, 238);
+    color: #fff;
+    height: 74px;
+
+}
+nav div img {
+    float: left;
+}
+nav .nav h1{
+    color: rgb(252, 252, 75);
+    float: right;
+    padding-right: 10px;
+    display: inline;
+    border: 1px solid;
+    position: relative;
+}
+nav .nav p {
+    float: right;
+    position: relative;
+
+}
+
+
