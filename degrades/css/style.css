@@ -1,0 +1,21 @@
+#caixa {
+    width: 600px;
+    height: 600px;
+   /* background: wheat url(../imagem/camera.png);*/
+   /*background: linear-gradient(red, green);*gradiente*/
+   /*background: linear-gradient(#ccc, #d31d1d);*gradiente*/
+   /*background: linear-gradient(to left, red, green);/*gradiente*/
+   background: linear-gradient(to right, red, green);/*gradiente*/
+   background: linear-gradient(to top, red, green);/*gradiente*/
+   background: linear-gradient(to bottom, red, green, yellow);/*gradiente*/
+/*quantas cores quiser*/
+   background: linear-gradient(96deg, red, green);
+    /*gradiente*/
+   background: radial-gradient(   red, green, blue);/*gradiente*/
+
+
+}
+#caixa h1 {
+    /*background: rgba(255, 255, 255,0.8);/*opacidade*/
+   
+}
