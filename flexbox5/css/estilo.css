@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#conteudo {
+   
+    height: 400px;
+    background: #ccc;
+    display: flex; /*colca lado a lado os itens*/
+    /*display: block;/*fica um abaixo do outo*/
+    flex-direction: column;
+    flex-direction: column-reverse;/*em coluna reverso*/
+    flex-direction: row;
+    flex-direction: row-reverse;/*coloca todos na direita*/
+    flex-direction: row;
+    flex-wrap: nowrap;/*se itens não couber no espaço, encolhe não deixa descer*/
+    
+    /*flex-wrap: wrap;/*se diminuir a pagina os itens irão descendo*/
+    /*flex-wrap: wrap-reverse;/*invertido do de cima*/
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;/*distribui igualmente*/
+    justify-content: space-around;
+    align-items: stretch;/*estica junto pra baixo*/
+    align-items: center;/*fica no centro*/
+    align-items: flex-start;/*fica colados em cima*/
+    align-items: flex-end;/*fica colados em baixo*/
+    align-items: baseline;/*alinha tudo*/
+
+
+    
+
+
+   
+}
+
+.item {
+    width: 300px;
+    height: 100px;
+    background: orange;
+    margin: 5px;
+}

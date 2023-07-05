@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#conteudo {
+   
+    height: 400px;
+    background: #ccc;
+    display: flex; /*colca lado a lado os itens*/
+   
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    margin: 5px;
+
+    /*define proporção de espaço ocupado por um item,ate ocupar todo espaco da pagina*/
+    flex-grow: 0;
+}
+
+
+.item1 {
+     flex-grow: 1;
+}
+
+.item2 {
+    flex-grow: 2;/*aumentando o numero o item cerscera o dobro*/
+}
+.item3 {
+    flex-grow: 3;
+}
+
+
+/*
+
+.order1 {
+    order: 1;
+}
+
+.order2 {
+    order: 2;
+}
+.order3 {
+    order: 3;
+}
+.order4 {
+    order: 4;
+}
+.ordem{
+    order: -1;
+}*/
