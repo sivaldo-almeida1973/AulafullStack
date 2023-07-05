@@ -1,0 +1,31 @@
+#conteudo {
+    background: hsl(0, 0%, 86%);
+   /* width: 400px;/*se não tiver largura fixa , os item irão descer*/
+    height: 400px;
+    display: flex;
+/*
+row|row-reverse|column|column-reverse
+*/
+    /* flex-direction: row-reverse;/*ira ficar no outro lado*/
+     /*  flex-direction: column-reverse;*/
+     flex-direction: row; 
+
+/*
+nowrap|wrap|wrap-reverse
+*/
+       flex-wrap: nowrap;/*faz os itens caberem no container, se diminuir o tamanho dele*/
+       flex-wrap: wrap;/*faz os item descer de diminuir o tamanho do container*/
+      /* flex-wrap: wrap-reverse;/*inverte as posiçoes dos itens*/
+
+
+}
+
+
+
+.item {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border: 1px solid gray;
+    margin: 10px;
+}

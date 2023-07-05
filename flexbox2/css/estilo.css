@@ -1,0 +1,37 @@
+#container {
+    background: #d9d6d6;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction:row;
+}
+
+.item {
+    border: 1px solid rgb(227, 32, 32);
+    margin: 10px;
+    color: rgb(231, 153, 9);
+    background: white;
+    width: 50px;
+    height: 50px;
+}
+
+#container2 {
+    background: rgb(228, 227, 227);
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 300px;
+    
+    
+}
+
+
+.item2 {
+   border:  1px solid red;
+   margin: 10px;
+   width:50px;
+   height: 50px;
+   
+
+
+}
