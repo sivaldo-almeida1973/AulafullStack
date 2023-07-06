@@ -7,30 +7,43 @@
    
     height: 400px;
     background: #ccc;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; /*colca lado a lado os itens*/
+   
    
 }
 
 .item {
-    width: 100px;
+   /* width: 200px;*/
     height: 100px;
     background: orange;
     margin: 5px;
 
     /*define proporção de espaço ocupado por um item,ate ocupar todo espaco da pagina*/
-    flex-grow: 0;
-}
+    flex-grow: 1;
 
+   /*define a capacidade de redução de tamanho do item
+    flex-shrink: 1;
+
+     /*indica tamanho inicial do item*/
+    flex-basis: 100px;
+}
+ /* flex-grow: vai aumentar o item quando aumentar a pagina*/
+  /* flex-shrink: vai diminuir o item quando diminui a pagina*/
 
 .item1 {
-     flex-grow: 1;
+    /* flex-grow: 1;*/
+   /* flex-shrink: 1;1 tanto que vai encolher*/
 }
 
 .item2 {
     flex-grow: 2;/*aumentando o numero o item cerscera o dobro*/
+    /*flex-shrink: 2; 2 tanto que vai encolher*/
 }
 .item3 {
-    flex-grow: 3;
+   /* flex-grow: 3;*/
+   /* flex-shrink: 5; 5 tanto que vai encolher*/
 }
 
 
