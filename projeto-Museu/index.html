@@ -38,12 +38,72 @@
             <li><a href="#">Contatos</a></li>
            </ul>
 
-           </nav>  <!--fim nav-->
+           </nav>  <!--//fim nav-->
 
 
-        </header> <!--fim header-->
+        </header> <!--//fim header-->
 
-    </div> <!--fim container-->
+        <div id="principal"> <!--inicio principal-->
+             <div id="conteudo"> <!--inicio conteudo-->
+
+                <section id="capa"> <!--criar uma nova seção -->
+                <img src="imagem/museu.png" alt="">
+
+                </section> <!-- fim criar uma nova seção -->
+
+             </div> <!--// fim conteudo-->
+
+             <aside> <!--inicio lateral-->
+
+                <section id="depoimento">
+                  <img src="imagem/depoimento.png" alt="">
+                </section>
+
+                <section id="visita"> <!--inicio seção visita-->
+                    <h4>Faça uma visita</h4>
+                    <form action="">
+
+                        <fieldset>
+                            <legend>Selecione uma data:</legend>
+
+                            <label for="data">Data:</label>
+                            <input class="campo" type="text" id="data" value="dd/mm/aaaa"> 
+
+                            <label for="qtd">Qtd pessoas:</label>  
+                            <input style="width: 30px;" class="campo" type="text" id="qtd" value="1">
+
+
+
+                        </fieldset>
+                         <input class="botao" type="submit" value=" verificar disponibilidade">
+                    </form>
+
+                </section> <!--//fim seção visita-->
+
+                <section id="galeria"><!--inicio seção galeria-->
+                    <h4>Galeria de fotos</h4>
+
+                   <a href="">
+                    <img src="imagem/imagem1.jpg" height="93px" width="93px" alt="descrição imagem">
+                   </a>
+                   <a href="">
+                    <img src="imagem/imagem2.jpg" height="93px" width="93px" alt="descrição imagem">
+                   </a>
+                   <a href="">
+                    <img src="imagem/imagem3.jpg" height="93px" width="93px" alt="descrição imagem">
+                   </a>
+                   <a href="">
+                    <img src="imagem/imagem4.jpg" height="93px" width="93px" alt="descrição imagem">
+                   </a>
+
+
+                </section> <!--//fim seção visita-->
+
+             </aside> <!--//fim lateral-->
+
+        </div>  <!--//fim principal-->
+
+    </div> <!--//fim container-->
     
 </body>
 </html>
